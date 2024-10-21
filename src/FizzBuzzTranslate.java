@@ -1,9 +1,12 @@
 public class FizzBuzzTranslate {
 	public String translate(int number) {
-		if (number % 3 == 0) {
+		boolean divisibleBy3 = number % 3 == 0;
+		boolean divisibleBy5 = number % 5 == 0;
+		if (divisibleBy3 && divisibleBy5) {
+			return "FizzBuzz";
+		} else if (divisibleBy3) {
 			return "Fizz";
-		}
-		if (number % 5 == 0) {
+		} else if (divisibleBy5) {
 			return "Buzz";
 		}
 		return "" + number;

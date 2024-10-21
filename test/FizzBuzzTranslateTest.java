@@ -33,7 +33,7 @@ public class FizzBuzzTranslateTest {
 
 	@Test
 	@DisplayName("Return 'FizzBuzz' when divisible by 3 and 5")
-	public void testReturnFizzWhenDivisibleBy3And5() {
+	public void testReturnFizzBuzzWhenDivisibleBy3And5() {
 		// arrange
 		int number = 30;
 		String expected = "FizzBuzz";
