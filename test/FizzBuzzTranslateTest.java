@@ -61,7 +61,7 @@ public class FizzBuzzTranslateTest {
 	@DisplayName("Return 'Fizz' when number includes digit 3")
 	public void testReturnFizzWhenIncludeDigit3() {
 		// arrange
-		int number = 253;
+		int number = 23;
 		String expected = "Fizz";
 		// action
 		FizzBuzzTranslate translator = new FizzBuzzTranslate();
@@ -76,6 +76,19 @@ public class FizzBuzzTranslateTest {
 		// arrange
 		int number = 52;
 		String expected = "Buzz";
+		// action
+		FizzBuzzTranslate translator = new FizzBuzzTranslate();
+		String result = translator.translate(number);
+		// assert
+		assertEquals(expected, result);
+	}
+
+	@Test
+	@DisplayName("Return 'FizzBuzz' when number includes digit 5 and 3")
+	public void testReturnFizzBuzzWhenIncludeDigit5And3() {
+		// arrange
+		int number = 523;
+		String expected = "FizzBuzz";
 		// action
 		FizzBuzzTranslate translator = new FizzBuzzTranslate();
 		String result = translator.translate(number);
