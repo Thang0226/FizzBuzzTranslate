@@ -6,15 +6,17 @@ import static org.junit.jupiter.api.Assertions.*;
 public class FizzBuzzTranslateTest {
 
 	@Test
-	@DisplayName("Output a String")
-	public void testOutputAString() {
+	@DisplayName("Return 'Fizz' when divisible by 3")
+	public void testReturnFizzWhenDivisibleBy3() {
 		// arrange
 		int number = 12;
-		String expected = "12";
+		String expected = "Fizz";
 		// action
 		FizzBuzzTranslate translator = new FizzBuzzTranslate();
 		String result = translator.translate(number);
 		// assert
 		assertEquals(expected, result);
 	}
+
+	
 }
