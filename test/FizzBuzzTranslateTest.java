@@ -56,4 +56,17 @@ public class FizzBuzzTranslateTest {
 		// assert
 		assertEquals(expected, result);
 	}
+
+	@Test
+	@DisplayName("Return 'Fizz' when number includes digit 3")
+	public void testReturnFizzWhenIncludeDigit3() {
+		// arrange
+		int number = 253;
+		String expected = "Fizz";
+		// action
+		FizzBuzzTranslate translator = new FizzBuzzTranslate();
+		String result = translator.translate(number);
+		// assert
+		assertEquals(expected, result);
+	}
 }
